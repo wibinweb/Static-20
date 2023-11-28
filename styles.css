@@ -1,0 +1,1610 @@
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, a::-moz-selection, span::-moz-selection, label::-moz-selection, input[type=submit]::-moz-selection, input[type=button]::-moz-selection {
+  background: none;
+}
+
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, a::selection, span::selection, label::selection, input[type=submit]::selection, input[type=button]::selection {
+  background: none;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: #EEF5FF;
+  font-family: "Ubuntu", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main {
+  margin: 0 auto;
+  width: 60%;
+  height: 80vh;
+  background: white;
+  border-radius: 20px;
+  padding: 12.5px;
+}
+body main .contain-all {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+body main .contain-all aside {
+  height: 100%;
+  width: 30%;
+}
+body main .contain-all aside .img-aside {
+  background: url("../IMG/bg-sidebar-desktop.svg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main .contain-all aside .img-aside .inside-img {
+  height: 90%;
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  gap: 4.25vh;
+}
+body main .contain-all aside .img-aside .inside-img > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.3vh;
+}
+body main .contain-all aside .img-aside .inside-img > div .left-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 1.5vh;
+  height: 1.5vh;
+  padding: 1.5vh;
+}
+body main .contain-all aside .img-aside .inside-img > div .left-number span {
+  all: unset;
+  font-weight: 500;
+  font-size: 1.85vh;
+  color: white;
+  cursor: default;
+}
+body main .contain-all aside .img-aside .inside-img > div .left-number-selected {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #BDE1FF;
+  border: 1px solid #BDE1FF;
+  border-radius: 50%;
+  width: 1.5vh;
+  height: 1.5vh;
+  padding: 1.5vh;
+}
+body main .contain-all aside .img-aside .inside-img > div .left-number-selected span {
+  all: unset;
+  font-weight: 500;
+  font-size: 1.85vh;
+  color: black;
+  cursor: default;
+}
+body main .contain-all aside .img-aside .inside-img > div .right-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+body main .contain-all aside .img-aside .inside-img > div .right-number span, body main .contain-all aside .img-aside .inside-img > div .right-number h3 {
+  all: unset;
+  cursor: default;
+}
+body main .contain-all aside .img-aside .inside-img > div .right-number span {
+  font-size: 1.2vh;
+  font-weight: 400;
+  color: #B5B6FF;
+}
+body main .contain-all aside .img-aside .inside-img > div .right-number h3 {
+  font-weight: 700;
+  font-size: 1.4vh;
+  color: white;
+  letter-spacing: 0.6px;
+}
+
+body main .contain-all section {
+  height: 100%;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main .contain-all section .inside-section {
+  width: 80%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+body main .contain-all section .inside-section header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 10px;
+  width: 100%;
+  margin: 0 auto;
+}
+body main .contain-all section .inside-section header h2, body main .contain-all section .inside-section header p {
+  all: unset;
+  cursor: default;
+}
+body main .contain-all section .inside-section header .headerH2 {
+  font-size: 4.5vh;
+  font-weight: 700;
+  color: #03285B;
+}
+body main .contain-all section .inside-section header .headerP {
+  font-size: 2.525vh;
+  color: #9C9DA2;
+}
+
+body main .contain-all section .inside-section nav form {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body main .contain-all section .inside-section nav form > :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 3.5vh;
+}
+body main .contain-all section .inside-section nav form > :nth-child(1) > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 0.95vh;
+}
+body main .contain-all section .inside-section nav form > :nth-child(1) > div .labelError {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body main .contain-all section .inside-section nav form > :nth-child(1) > div .labelError label, body main .contain-all section .inside-section nav form > :nth-child(1) > div .labelError span {
+  all: unset;
+  font-size: 2.35vh;
+}
+body main .contain-all section .inside-section nav form > :nth-child(1) > div .labelError label {
+  cursor: pointer;
+  color: #03285B;
+}
+body main .contain-all section .inside-section nav form > :nth-child(1) > div .labelError span {
+  color: red;
+  font-size: 1.9vh;
+}
+body main .contain-all section .inside-section nav form > :nth-child(1) > div input[type=text], body main .contain-all section .inside-section nav form > :nth-child(1) > div input[type=email], body main .contain-all section .inside-section nav form > :nth-child(1) > div input[type=tel] {
+  padding: 12.5px 10px;
+  border: 1px solid grey;
+  border-radius: 5.5px;
+  color: #03285B;
+}
+body main .contain-all section .inside-section nav form > :nth-child(1) > div input::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9C9DA2;
+}
+body main .contain-all section .inside-section nav form > :nth-child(1) > div input::-moz-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9C9DA2;
+}
+body main .contain-all section .inside-section nav form > :nth-child(1) > div input:-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9C9DA2;
+}
+body main .contain-all section .inside-section nav form > :nth-child(1) > div input::-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9C9DA2;
+}
+body main .contain-all section .inside-section nav form > :nth-child(1) > div input::placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9C9DA2;
+}
+body main .contain-all section .inside-section nav form > :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+body main .contain-all section .inside-section nav form > :nth-child(2) input {
+  all: unset;
+  background: #03285B;
+  color: white;
+  cursor: pointer;
+  padding: 11.5px 26.5px;
+  border-radius: 7.5px;
+  font-size: 2.15vh;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+body main .contain-all section .inside-section nav form > :nth-child(2) input:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background: #174A8B;
+}
+
+body main .contain-all section .inside-section article form {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body main .contain-all section .inside-section article form .labelsInputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 15px;
+  width: 100%;
+}
+body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) .labelIputWidth {
+  height: 27.5vh;
+  width: 30%;
+  border: 1.5px solid #9C9DA2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) .labelIputWidth label {
+  cursor: pointer;
+  width: 85%;
+  height: 80%;
+  border-radius: 10px;
+  padding: 2.75vh 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  place-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) .labelIputWidth label:hover {
+  border: 1px solid #9C9DA2;
+}
+body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) .labelIputWidth label > :nth-child(1) {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) .labelIputWidth label > :nth-child(1) > div {
+  width: 100%;
+  max-width: 6vh;
+}
+body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) .labelIputWidth label > :nth-child(1) > div img {
+  width: 100%;
+}
+body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) .labelIputWidth label > :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  gap: 0.3vh;
+}
+body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) .labelIputWidth label > :nth-child(2) h3, body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) .labelIputWidth label > :nth-child(2) span {
+  all: unset;
+  cursor: default;
+}
+body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) .labelIputWidth label > :nth-child(2) h3 {
+  color: #03285B;
+  font-weight: 700;
+  font-size: 2.5vh;
+}
+body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) .labelIputWidth label > :nth-child(2) span {
+  color: #9C9DA2;
+  font-weight: 400;
+  font-size: 2.2vh;
+  cursor: default;
+}
+body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) .labelIputWidth label > :nth-child(2) .hideFreeMonths {
+  display: none;
+}
+body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) .labelIputWidth label > :nth-child(2) .showFreeMonths {
+  display: block;
+  color: #03285B;
+  font-size: 2.1vh;
+}
+body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) .labelIputWidth input {
+  display: none;
+}
+body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) .labelIputWidth input:checked + label {
+  border: 1px solid #9C9DA2;
+  background: rgba(72, 62, 255, 0.075);
+}
+body main .contain-all section .inside-section article form .labelsInputs > :nth-child(2) {
+  width: 100%;
+  background: rgba(72, 62, 255, 0.075);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  place-content: center;
+  border-radius: 10px;
+  padding: 10px 0px;
+}
+body main .contain-all section .inside-section article form .labelsInputs > :nth-child(2) .adjust-width {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2vh;
+  width: 90%;
+  height: 80%;
+}
+body main .contain-all section .inside-section article form .labelsInputs > :nth-child(2) .adjust-width h3 {
+  all: unset;
+  font-weight: 700;
+  font-size: 2.1vh;
+  color: #9C9DA2;
+  cursor: default;
+}
+body main .contain-all section .inside-section article form .labelsInputs > :nth-child(2) .adjust-width .switchTimeNeutral {
+  all: unset;
+  font-weight: 700;
+  font-size: 2.1vh;
+  color: #9C9DA2;
+}
+body main .contain-all section .inside-section article form .labelsInputs > :nth-child(2) .adjust-width .switchTimeSelection {
+  all: unset;
+  font-weight: 700;
+  font-size: 2.1vh;
+  color: #03285B;
+  cursor: default;
+}
+body main .contain-all section .inside-section article form .labelsInputs > :nth-child(2) .adjust-width .switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+}
+body main .contain-all section .inside-section article form .labelsInputs > :nth-child(2) .adjust-width .switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+body main .contain-all section .inside-section article form .labelsInputs > :nth-child(2) .adjust-width .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+body main .contain-all section .inside-section article form .labelsInputs > :nth-child(2) .adjust-width .switch input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  transform: translateX(16px);
+}
+body main .contain-all section .inside-section article form .labelsInputs > :nth-child(2) .adjust-width .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #03285B;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+body main .contain-all section .inside-section article form .labelsInputs .show-error-select-one {
+  margin: 0 auto;
+  width: 98%;
+  color: red;
+  font-size: 1.9vh;
+  cursor: default;
+}
+body main .contain-all section .inside-section article form > :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body main .contain-all section .inside-section article form > :nth-child(2) input[type=button] {
+  all: unset;
+  color: #9C9DA2;
+  cursor: pointer;
+  padding: 11.5px 26.5px;
+  border-radius: 7.5px;
+  font-size: 2.15vh;
+  font-weight: 500;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+body main .contain-all section .inside-section article form > :nth-child(2) input[type=button]:hover {
+  color: #03285B;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+body main .contain-all section .inside-section article form > :nth-child(2) input[type=submit] {
+  all: unset;
+  background: #03285B;
+  color: white;
+  cursor: pointer;
+  padding: 11.5px 26.5px;
+  border-radius: 7.5px;
+  font-size: 2.15vh;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+body main .contain-all section .inside-section article form > :nth-child(2) input[type=submit]:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background: #174A8B;
+}
+
+body main .contain-all section .inside-section footer form {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body main .contain-all section .inside-section footer form .labelsInputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  gap: 2.5vh;
+}
+body main .contain-all section .inside-section footer form > :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 2.5vh;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+body main .contain-all section .inside-section footer form > :nth-child(1) .labelIputWidth {
+  height: 11.5vh;
+  width: 100%;
+  border: 1.5px solid #9C9DA2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1.5vh;
+  cursor: pointer;
+  position: relative;
+}
+body main .contain-all section .inside-section footer form > :nth-child(1) .labelIputWidth input {
+  width: 10%;
+  position: absolute;
+  left: 3.25vh;
+  height: 2.5vh;
+  width: 2.5vh;
+}
+body main .contain-all section .inside-section footer form > :nth-child(1) .labelIputWidth label {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 1.5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  place-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  place-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+body main .contain-all section .inside-section footer form > :nth-child(1) .labelIputWidth label:hover {
+  border: 1px solid #9C9DA2;
+}
+body main .contain-all section .inside-section footer form > :nth-child(1) .labelIputWidth label .internalLabel {
+  width: 88.5%;
+  height: 80%;
+}
+body main .contain-all section .inside-section footer form > :nth-child(1) .labelIputWidth label .internalLabel .intIntLabel {
+  height: 100%;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body main .contain-all section .inside-section footer form > :nth-child(1) .labelIputWidth label .internalLabel .intIntLabel > :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  gap: 1vh;
+}
+body main .contain-all section .inside-section footer form > :nth-child(1) .labelIputWidth label .internalLabel .intIntLabel > :nth-child(1) h2, body main .contain-all section .inside-section footer form > :nth-child(1) .labelIputWidth label .internalLabel .intIntLabel > :nth-child(1) p {
+  all: unset;
+}
+body main .contain-all section .inside-section footer form > :nth-child(1) .labelIputWidth label .internalLabel .intIntLabel > :nth-child(1) h2 {
+  font-size: 2.5vh;
+  font-weight: 700;
+  color: #03285B;
+}
+body main .contain-all section .inside-section footer form > :nth-child(1) .labelIputWidth label .internalLabel .intIntLabel > :nth-child(1) p {
+  font-size: 2.1vh;
+  color: #9C9DA2;
+}
+body main .contain-all section .inside-section footer form > :nth-child(1) .labelIputWidth label .internalLabel .intIntLabel > :nth-child(2) span {
+  all: unset;
+  font-size: 2.2vh;
+  color: #03285B;
+}
+body main .contain-all section .inside-section footer form > :nth-child(1) .labelIputWidth input:checked + label {
+  border: 1px solid #9C9DA2;
+  background: rgba(72, 62, 255, 0.075);
+}
+body main .contain-all section .inside-section footer form > :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body main .contain-all section .inside-section footer form > :nth-child(2) input[type=button] {
+  all: unset;
+  color: #9C9DA2;
+  cursor: pointer;
+  padding: 11.5px 26.5px;
+  border-radius: 7.5px;
+  font-size: 2.15vh;
+  font-weight: 500;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+body main .contain-all section .inside-section footer form > :nth-child(2) input[type=button]:hover {
+  color: #03285B;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+body main .contain-all section .inside-section footer form > :nth-child(2) input[type=submit] {
+  all: unset;
+  background: #03285B;
+  color: white;
+  cursor: pointer;
+  padding: 11.5px 26.5px;
+  border-radius: 7.5px;
+  font-size: 2.15vh;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+body main .contain-all section .inside-section footer form > :nth-child(2) input[type=submit]:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background: #174A8B;
+}
+
+body main .contain-all section .inside-section .show-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+}
+body main .contain-all section .inside-section .show-div form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(1) {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5vh;
+  padding-bottom: 2vh;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1.5vh;
+  padding: 2vh 0vh;
+  background: #F8F9FE;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(1) > :nth-child(1) {
+  height: 90%;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2vh;
+  height: auto;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  gap: 1vh;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) h2, body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) a {
+  all: unset;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) h2 {
+  color: #03285B;
+  font-size: 2.5vh;
+  font-weight: 700;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) a {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #9C9DA2;
+  font-size: 2.2vh;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) a:hover {
+  color: #453CD8;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(2) h2 {
+  all: unset;
+  color: #03285B;
+  font-size: 2.5vh;
+  font-weight: 700;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(2) {
+  display: block;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  gap: 3.5vh;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(3) .last-show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(3) .last-show h2 {
+  all: unset;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(3) .last-show > :nth-child(1) h2 {
+  color: #9C9DA2;
+  font-size: 2.2vh;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(3) .last-show > :nth-child(2) h2 {
+  color: #03285B;
+  font-size: 2.2vh;
+  font-weight: 700;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(3) .last-hide {
+  display: none;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(2) > :nth-child(1) {
+  height: 90%;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(2) > :nth-child(1) h2 {
+  all: unset;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(2) > :nth-child(1) .totalTxt {
+  color: #9C9DA2;
+  font-size: 2.2vh;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(2) > :nth-child(1) .totalNbr {
+  color: #453CD8;
+  font-size: 3vh;
+  font-weight: 700;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(2) input[type=button] {
+  all: unset;
+  color: #9C9DA2;
+  cursor: pointer;
+  padding: 11.5px 26.5px;
+  border-radius: 7.5px;
+  font-size: 2.15vh;
+  font-weight: 500;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(2) input[type=button]:hover {
+  color: #03285B;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(2) input[type=submit] {
+  all: unset;
+  background: #03285B;
+  color: white;
+  cursor: pointer;
+  padding: 11.5px 26.5px;
+  border-radius: 7.5px;
+  font-size: 2.15vh;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+body main .contain-all section .inside-section .show-div form > :nth-child(2) input[type=submit]:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background: #174A8B;
+}
+
+body main .contain-all section .inside-section .show-thanks {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  gap: 3.25vh;
+}
+body main .contain-all section .inside-section .show-thanks > :nth-child(1) {
+  width: 100%;
+  max-width: 11vh;
+}
+body main .contain-all section .inside-section .show-thanks > :nth-child(1) img {
+  width: 100%;
+}
+body main .contain-all section .inside-section .show-thanks > :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  gap: 2.5vh;
+  text-align: center;
+}
+body main .contain-all section .inside-section .show-thanks > :nth-child(2) h1, body main .contain-all section .inside-section .show-thanks > :nth-child(2) p {
+  all: unset;
+  cursor: default;
+}
+body main .contain-all section .inside-section .show-thanks > :nth-child(2) h1 {
+  font-size: 5vh;
+  color: #03285B;
+  font-weight: 700;
+}
+body main .contain-all section .inside-section .show-thanks > :nth-child(2) p {
+  font-size: 2.5vh;
+  color: #9C9DA2;
+  line-height: 4vh;
+}
+
+@media (max-width: 1100px) {
+  body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) .labelIputWidth label > :nth-child(2) h3 {
+    color: #03285B;
+    font-weight: 700;
+    font-size: 2vh;
+  }
+}
+@media (max-width: 855px) {
+  body main .contain-all aside .img-aside .inside-img > div .left-number span {
+    all: unset;
+    font-weight: 500;
+    font-size: 1.2vh;
+    color: white;
+  }
+  body main .contain-all aside .img-aside .inside-img > div .left-number-selected {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #BDE1FF;
+    border: 1px solid #BDE1FF;
+    border-radius: 50%;
+    width: 1.5vh;
+    height: 1.5vh;
+    padding: 1.5vh;
+  }
+  body main .contain-all aside .img-aside .inside-img > div .left-number-selected span {
+    all: unset;
+    font-weight: 500;
+    font-size: 1.2vh;
+    color: black;
+  }
+  body main .contain-all aside .img-aside .inside-img > div .right-number h3 {
+    font-size: 1.2vh;
+  }
+}
+@media (max-width: 850px) {
+  body {
+    height: 100vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    border-radius: 0px;
+    padding: 0px;
+    background: #E7EEF8;
+  }
+  body main .contain-all {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .contain-all aside {
+    height: 25%;
+    width: 100%;
+  }
+  body main .contain-all aside .img-aside {
+    background: url("../IMG/bg-sidebar-mobile.svg") no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  body main .contain-all aside .img-aside .inside-img {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .contain-all aside .img-aside .inside-img > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+    margin-top: -8.5vh;
+  }
+  body main .contain-all aside .img-aside .inside-img > div .left-number {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 1.5vh;
+    height: 1.5vh;
+    padding: 1.5vh;
+  }
+  body main .contain-all aside .img-aside .inside-img > div .left-number span {
+    all: unset;
+    font-weight: 500;
+    font-size: 2vh;
+    color: white;
+  }
+  body main .contain-all aside .img-aside .inside-img > div .left-number-selected {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #BDE1FF;
+    border: 1px solid #BDE1FF;
+    border-radius: 50%;
+    width: 1.5vh;
+    height: 1.5vh;
+    padding: 1.5vh;
+  }
+  body main .contain-all aside .img-aside .inside-img > div .left-number-selected span {
+    all: unset;
+    font-weight: 500;
+    font-size: 2vh;
+    color: black;
+  }
+  body main .contain-all aside .img-aside .inside-img > div .right-number {
+    display: none;
+  }
+  body main .contain-all section {
+    margin-top: -8.5vh;
+    height: 85%;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 20px 20px 0px 0px;
+    background: white;
+    -webkit-box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.5);
+  }
+  body main .contain-all section .inside-section {
+    width: 92.5%;
+    height: 92.5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 30px;
+    border-radius: 20px;
+  }
+  body main .contain-all section .inside-section header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  body main .contain-all section .inside-section header .headerH2 {
+    font-size: 3.25vh;
+  }
+  body main .contain-all section .inside-section header .headerP {
+    font-size: 2.45vh;
+  }
+}
+@media (max-width: 850px) {
+  body main .contain-all section .inside-section article form .labelsInputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 20px;
+  }
+  body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) .labelIputWidth {
+    height: 10.5vh;
+    width: 100%;
+    border: 1.5px solid #9C9DA2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    place-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) .labelIputWidth label {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    padding: 2.5vh 3vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 2vh;
+  }
+  body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) .labelIputWidth label > :nth-child(1) {
+    width: auto;
+  }
+  body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) .labelIputWidth label > :nth-child(1) > div {
+    width: 100%;
+    max-width: 4.5vh;
+  }
+  body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) .labelIputWidth label > :nth-child(1) > div img {
+    width: 100%;
+  }
+  body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) .labelIputWidth label > :nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    gap: 0.3vh;
+    height: 100%;
+  }
+  body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) .labelIputWidth label > :nth-child(2) h3 {
+    font-size: 1.9vh;
+  }
+  body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) .labelIputWidth label > :nth-child(2) span {
+    font-size: 1.8vh;
+  }
+  body main .contain-all section .inside-section article form .labelsInputs > :nth-child(1) .labelIputWidth label > :nth-child(2) .showFreeMonths {
+    font-size: 1.75vh;
+  }
+  body main .contain-all section .inside-section article form > :nth-child(2) input {
+    font-size: 2vh;
+  }
+}
+@media (max-width: 850px) {
+  body main .contain-all section .inside-section footer form {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body main .contain-all section .inside-section footer form .labelsInputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    gap: 20px;
+  }
+  body main .contain-all section .inside-section footer form > :nth-child(1) .labelIputWidth {
+    height: 10.5vh;
+    width: 100%;
+    border: 1.5px solid #9C9DA2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 1.5vh;
+    cursor: pointer;
+    position: relative;
+  }
+  body main .contain-all section .inside-section footer form > :nth-child(1) .labelIputWidth input {
+    width: 10%;
+    position: absolute;
+    left: 1.25vh;
+    height: 2vh;
+    width: 2vh;
+  }
+  body main .contain-all section .inside-section footer form > :nth-child(1) .labelIputWidth label {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 1.5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    place-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    place-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  body main .contain-all section .inside-section footer form > :nth-child(1) .labelIputWidth label:hover {
+    border: 1px solid #9C9DA2;
+  }
+  body main .contain-all section .inside-section footer form > :nth-child(1) .labelIputWidth label .internalLabel {
+    width: 88.5%;
+    height: 80%;
+  }
+  body main .contain-all section .inside-section footer form > :nth-child(1) .labelIputWidth label .internalLabel .intIntLabel {
+    height: 100%;
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body main .contain-all section .inside-section footer form > :nth-child(1) .labelIputWidth label .internalLabel .intIntLabel > :nth-child(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    gap: 0.5vh;
+  }
+  body main .contain-all section .inside-section footer form > :nth-child(1) .labelIputWidth label .internalLabel .intIntLabel > :nth-child(1) h2, body main .contain-all section .inside-section footer form > :nth-child(1) .labelIputWidth label .internalLabel .intIntLabel > :nth-child(1) p {
+    all: unset;
+  }
+  body main .contain-all section .inside-section footer form > :nth-child(1) .labelIputWidth label .internalLabel .intIntLabel > :nth-child(1) h2 {
+    font-size: 1.9vh;
+    font-weight: 700;
+    color: #03285B;
+  }
+  body main .contain-all section .inside-section footer form > :nth-child(1) .labelIputWidth label .internalLabel .intIntLabel > :nth-child(1) p {
+    font-size: 1.8vh;
+    color: #9C9DA2;
+  }
+  body main .contain-all section .inside-section footer form > :nth-child(1) .labelIputWidth label .internalLabel .intIntLabel > :nth-child(2) span {
+    color: #03285B;
+    font-size: 1.75vh;
+  }
+}
+@media (max-width: 850px) {
+  body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) h2, body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) a {
+    all: unset;
+  }
+  body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) h2 {
+    font-size: 2.1vh;
+  }
+  body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) a {
+    font-size: 2vh;
+  }
+  body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(2) h2 {
+    all: unset;
+    font-size: 2.1vh;
+  }
+  body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(3) .last-show h2 {
+    all: unset;
+  }
+  body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(3) .last-show > :nth-child(1) h2 {
+    font-size: 2.1vh;
+  }
+  body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(3) .last-show > :nth-child(2) h2 {
+    font-size: 2.1vh;
+  }
+  body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(3) .last-hide {
+    display: none;
+  }
+  body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(2) > :nth-child(1) h2 {
+    all: unset;
+  }
+  body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(2) > :nth-child(1) .totalTxt {
+    font-size: 2.1vh;
+  }
+  body main .contain-all section .inside-section .show-div form > :nth-child(1) > :nth-child(2) > :nth-child(1) .totalNbr {
+    font-size: 2.5vh;
+  }
+}
+@media (max-width: 850px) {
+  body main .contain-all section .inside-section .show-thanks {
+    gap: 3vh;
+  }
+  body main .contain-all section .inside-section .show-thanks > :nth-child(1) {
+    max-width: 9vh;
+  }
+  body main .contain-all section .inside-section .show-thanks > :nth-child(2) {
+    gap: 2.25vh;
+  }
+  body main .contain-all section .inside-section .show-thanks > :nth-child(2) h1, body main .contain-all section .inside-section .show-thanks > :nth-child(2) p {
+    all: unset;
+  }
+  body main .contain-all section .inside-section .show-thanks > :nth-child(2) h1 {
+    font-size: 4vh;
+    color: #03285B;
+    font-weight: 700;
+  }
+  body main .contain-all section .inside-section .show-thanks > :nth-child(2) p {
+    font-size: 2.1vh;
+    color: #9C9DA2;
+    line-height: 3vh;
+  }
+  body main .contain-all section .inside-section .show-thanks > :nth-child(2) p br {
+    display: none;
+  }
+}
+body main .contain-all section .inside-section nav, body main .contain-all section .inside-section article, body main .contain-all section .inside-section footer, body main .contain-all section .inside-section .hide-div {
+  height: 83.5%;
+}
+body main .contain-all section .inside-section article, body main .contain-all section .inside-section footer, body main .contain-all section .inside-section .hide-div, body main .contain-all section .inside-section .hide-thanks {
+  display: none;
+}
+body main .contain-all section .inside-section .show-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body main .contain-all section .inside-section .hide-part {
+  display: none;
+}

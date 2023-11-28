@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS/normalize.css">
+	<link rel="stylesheet" href="CSS/styles.css">
+	<link rel="stylesheet" href="CSS/fonts.css">
+	<link rel="icon" type="image/x-icon" href="IMG/icon.png">
+	<title>Form validation</title>
+</head>
+<body>
+	<main>
+		<div class="contain-all">
+			<aside>
+				<div class="img-aside">
+					<div class="inside-img">
+						
+						<div>
+							<div class="left-number left-number-selected" id="index1">
+								<span>1</span>
+							</div>
+							<div class="right-number">
+								<span>STEP 1</span>
+								<h3>YOUR INFO</h3>
+							</div>
+						</div>
+
+						<div>
+							<div class="left-number " id="index2">
+								<span>2</span>
+							</div>
+							<div class="right-number">
+								<span>STEP 2</span>
+								<h3>SELECT PLAN</h3>
+							</div>
+						</div>
+
+						<div>
+							<div class="left-number" id="index3">
+								<span>3</span>
+							</div>
+							<div class="right-number">
+								<span>STEP 3</span>
+								<h3>ADD-ONS</h3>
+							</div>
+						</div>
+
+						<div>
+							<div class="left-number" id="index4">
+								<span>4</span>	
+							</div>
+							<div class="right-number">
+								<span>STEP 4</span>
+								<h3>SUMMARY</h3>
+							</div>
+						</div>
+				
+
+					</div>
+				</div>
+			</aside>
+			<section>
+				<div class="inside-section">
+					<header id="finHeader">
+						<h2 id="headerFindH2" class="headerH2"></h2>
+						<p id="headerFIndP" class="headerP"></p>
+					</header>
+					<nav id="findNav">
+						<form action="" id="formN1">
+							<div>
+								<div>
+									<div class="labelError">
+										<label for="name">Name</label>
+										<span id="nameError"></span>
+									</div>
+									<input autocomplete="on" id="name" name="name" type="text" placeholder="e.g. Stephin King" maxlength="35">
+								</div>
+								<div>
+									<div class="labelError">
+										<label for="email">Email Address</label>
+										<span id="emailError"></span>
+									</div>
+									<input autocomplete="on" id="email" name="email" type="email" placeholder="e.g.stephinking@lorem.com" maxlength="40">
+								</div>
+								<div>
+									<div class="labelError">
+										<label for="number">Phone Number</label>
+										<span id="numberError"></span>
+									</div>
+									<input autocomplete="on" id="number" name="number" type="tel" placeholder="e.g. +1 234 567 890" maxlength="20">
+								</div>
+							</div>
+							<div>
+								<input type="submit" value="Next Step">
+							</div>
+						</form>
+					</nav>
+					<article id="findArticle">
+						<form action="" id="formN2">
+							<div class="labelsInputs">
+								<div>
+									<div class="labelIputWidth">
+										<input type="radio" name="planSelection" id="arcade">
+										<label for="arcade">
+											<div>
+												<div>
+													<img src="IMG/icon-arcade.svg" alt="Arcade">
+												</div>
+											</div>
+											<div>
+												<h3>Arcade</h3>
+												<span id="arcadePrice"></span>
+												<span class="hideFreeMonths">2 months free</span>
+											</div>
+										</label>
+									</div>
+									<div class="labelIputWidth">
+										<input type="radio" name="planSelection" id="advanced">
+										<label for="advanced">
+											<div>
+												<div>
+													<img src="IMG/icon-advanced.svg" alt="Arcade">
+												</div>
+											</div>
+											<div>
+												<h3>Advanced</h3>
+												<span id="advancedPrice"></span>
+												<span class="hideFreeMonths">2 months free</span>
+											</div>
+										</label>
+									</div>
+									<div class="labelIputWidth">
+										<input type="radio" name="planSelection" id="pro">
+										<label for="pro">
+											<div>
+												<div>
+													<img src="IMG/icon-pro.svg">
+												</div>
+											</div>
+											<div>
+												<h3>Pro</h3>
+												<span id="proPrice"></span>
+												<span class="hideFreeMonths">2 months free</span>
+											</div>
+										</label>
+									</div>
+								</div>
+								<div>
+									<div class="adjust-width">
+										<div>
+											<h3 id="monthlyId" class="switchTimeSelection">Monthly</h3>
+										</div>
+										<label class="switch">
+											<input type="checkbox" id="mySwitch">
+											<span class="slider"></span>
+										</label>
+										<div>
+											<h3 id="yarlyId">Yearly</h3>
+										</div>
+									</div>
+								</div>
+								<span id="errorSelectOne" class="show-error-select-one"></span>
+							</div>
+							<div>
+								<input type="button" value="Go Back" id="goBack1">
+								<input type="submit" value="Next Step">
+							</div>
+
+						</form>
+					</article>
+					<footer id="findFooter">
+						<form action="" id="formN3">
+							<div>
+								<div class="labelIputWidth">
+									<input type="checkbox" name="planSelection" id="addons1">
+									<label for="addons1">
+										<div class="internalLabel">
+											<div class="intIntLabel">
+												<div>
+													<h2>Online service</h2>
+													<p>Access to multiplayer games</p>
+												</div>
+												<div>
+													<span id="colocarvaloresSeleccionados"></span>
+												</div>
+											</div>
+										</div>
+										
+									</label>
+								</div>
+								<div class="labelIputWidth">
+									<input type="checkbox" name="planSelection" id="addons2">
+									<label for="addons2">
+										<div class="internalLabel">
+											<div class="intIntLabel">
+												<div>
+													<h2>Larger storage</h2>
+													<p>Extra 1TB of cloud save</p>
+												</div>
+												<div>
+													<span id="colocarvaloresSeleccionados2"></span>
+												</div>
+											</div>
+										</div>
+									</label>
+								</div>
+								<div class="labelIputWidth">
+									<input type="checkbox" name="planSelection" id="addons3">
+									<label for="addons3">
+										<div class="internalLabel">
+											<div class="intIntLabel">
+												<div>
+													<h2>Customizable profile</h2>
+													<p>Custom theme on your profile</p>
+												</div>
+												<div>
+													<span id="colocarvaloresSeleccionados3"></span>
+												</div>
+											</div>
+										</div>
+									</label>
+								</div>
+							</div>
+							<div>
+								<input type="button" value="Go Back" id="goBack2">
+								<input type="submit" value="Next Step">
+							</div>
+
+						</form>
+					</footer>
+
+					<div id="findDiv" class="hide-div">
+						<form action="" id="formN4">
+							<div>
+								<div>
+									<div>
+										<div>
+											<div>
+												<h2><span id="cartaSeleccionada"></span> <span id="cartaSeleccionadaTime"></span></h2>
+												<div>
+													<a href="" id="changeA">Change</a>
+												</div>
+											</div>
+											<div>
+												<h2>$<span id="valueFromSelectedPlan"></span>/<span id="timeFromSelectedPlan"></span></h2>
+											</div>
+										</div>
+										<div class="line">
+											<hr>
+										</div>
+										<div>
+											<div class="last-hide" id="onlineFinalValue">
+												<div>
+													<h2 class="titleCardF">Online service</h2>
+												</div>
+												<div>
+													<h2 class="valueClassCard">+$<span id="cartShowValueFinal"></span>/<span id="onlineServiceTime"></span></h2>
+												</div>
+											</div>
+											<div class="last-hide" id="largerFinalValue">
+												<div>
+													<h2 class="titleCardF">Larger Storage</h2>
+												</div>
+												<div>
+													<h2 class="valueClassCard">+$<span id="cartShowValueFinal2"></span>/<span id="largerStorageTime"></span></h2>
+												</div>
+											</div>
+											<div class="last-hide" id="customizableFinalValue">
+												<div>
+													<h2 class="titleCardF">Customizable profile</h2>
+												</div>
+												<div>
+													<h2 class="valueClassCard">+$<span id="cartShowValueFinal3"></span>/<span id="customizableProfileTime"></span></h2>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div>
+										<div>
+											<h2 class="totalTxt">Total (per <span id="timeSelectedTotal"></span>)</h2>
+										</div>
+										<div>
+											<h2 class="totalNbr">$<span id="getTotalValue"></span>/<span id="totalTimeType"></span> </h2>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div>
+								<input type="button" value="Go Back" id="goBack3">
+								<input type="submit" value="Next Step">
+							</div>
+						</form>
+					</div>
+
+					<div id="findThanks" class="hide-thanks">
+						<div>
+							<img src="IMG/icon-thank-you.svg" alt="thans">
+						</div>
+						<div>
+							<h1>Thank you!</h1>
+							<p>Thanks for confirming your subscription! We hope you have <br>fun using our platform. 
+							If you ever need support, please feel <br> free to email us at wininweb@gmail.com.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+	<script src="JS/script.js">
+	</script>
+</body>
+</html>

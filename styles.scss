@@ -1,0 +1,1382 @@
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, a::selection, span::selection, label::selection, input[type='submit']::selection, input[type='button']::selection{
+    background: none;
+}
+
+// GENERIAL BODY //
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: #EEF5FF;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    main{
+        margin: 0 auto;
+        width: 60%;
+        height: 80vh;
+        background: white;
+        border-radius: 20px;   
+        padding: 12.5px;
+        .contain-all{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: row wrap;
+        }
+    }
+}
+
+// ASIDE //
+
+body{
+    main{
+        .contain-all{
+            aside{
+                height: 100%;
+                width: 30%;
+                .img-aside{
+                    background: url('../IMG/bg-sidebar-desktop.svg') no-repeat;
+                    background-size: cover;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    display: flex;
+                    place-content: center;
+                    align-items: center;
+                    .inside-img{
+                        height: 90%;
+                        width: 85%;
+                        display: flex;
+                        flex-flow: column wrap;
+                        gap: 4.25vh;
+                        >div{
+                            display: flex;
+                            flex-flow: row wrap;
+                            align-items: center;
+                            gap: 1.3vh;
+                            .left-number{
+                                display: flex;
+                                place-content: center;
+                                align-items: center;
+                                border: 1px solid white;
+                                border-radius: 50%;
+                                width: 1.5vh;
+                                height: 1.5vh;
+                                padding: 1.5vh;
+                                span{
+                                    all: unset;
+                                    font-weight: 500;
+                                    font-size: 1.85vh;
+                                    color: white;
+                                    cursor: default;
+                                }
+                            }
+                            .left-number-selected{
+                                display: flex;
+                                place-content: center;
+                                align-items: center;
+                                background: #BDE1FF;
+                                border: 1px solid #BDE1FF;
+                                border-radius: 50%;
+                                width: 1.5vh;
+                                height: 1.5vh;
+                                padding: 1.5vh;
+                                span{
+                                    all: unset;
+                                    font-weight: 500;
+                                    font-size: 1.85vh;
+                                    color: black;
+                                    cursor: default;
+                                }
+                            }
+                            .right-number{
+                                display: flex;
+                                flex-flow: column wrap;
+                                span, h3{
+                                    all: unset;
+                                    cursor: default;
+                                }
+                                span{
+                                    font-size: 1.2vh;
+                                    font-weight: 400;
+                                    color: #B5B6FF;
+                                }
+                                h3{
+                                    font-weight: 700;
+                                    font-size: 1.4vh;
+                                    color: white;
+                                    letter-spacing: .6px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// GENERAL SECTION AND HEADER //
+
+body{
+    main{
+        .contain-all{
+            section{
+                height: 100%;
+                width: 70%;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                .inside-section{
+                    width: 80%;
+                    height: 90%;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: space-between;
+                    gap: 30px;
+                    header{
+                        display: flex;
+                        flex-flow: column nowrap;
+                        gap: 10px;
+                        width: 100%;
+                        margin: 0 auto;
+                        h2, p{
+                            all: unset;
+                            cursor: default;
+                        }
+                        .headerH2{
+                            font-size: 4.5vh;
+                            font-weight: 700;
+                            color: #03285B;
+                        }
+                        .headerP{
+                            font-size: 2.525vh;
+                            color: #9C9DA2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// GENERIAL SECTION PARTS *NAV* //
+
+body{
+    main{
+        .contain-all{
+            section{
+                .inside-section{
+                    nav{
+                        form{
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            flex-flow: column nowrap;
+                            justify-content: space-between;
+                            >:nth-child(1){
+                                display: flex;
+                                flex-flow: column nowrap;
+                                gap: 3.5vh;
+                                >div{
+                                    display: flex;
+                                    flex-flow: column nowrap;
+                                    gap: .95vh;
+                                    .labelError{
+                                        display: flex;
+                                        flex-flow: row nowrap;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        label, span{
+                                            all: unset;
+                                            font-size: 2.35vh;
+                                        }
+                                        label{
+                                            cursor: pointer;
+                                            color: #03285B;
+                                        }
+                                        span{
+                                            color: red;
+                                            font-size: 1.9vh;
+                                        }
+                                    }
+                                    input[type="text"], input[type="email"], input[type="tel"]{
+                                        padding: 12.5px 10px;
+                                        border: 1px solid grey;
+                                        border-radius: 5.5px;
+                                        color: #03285B;
+                                    }
+                                    input::placeholder{
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                        color: #9C9DA2;
+                                    }
+                                }
+                            }
+                            >:nth-child(2){
+                                display: flex;
+                                flex-flow: row wrap;
+                                justify-content: flex-end;
+                                input{
+                                    all: unset;
+                                    background: #03285B;
+                                    color: white;
+                                    cursor: pointer;
+                                    padding: 11.5px 26.5px;
+                                    border-radius: 7.5px;
+                                    font-size: 2.15vh;
+                                    transition: .2s;
+                                    &:hover{
+                                        transition: .2s;
+                                        background: #174A8B;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// GENERIAL SECTION PARTS *ARTICLE* //
+
+body{
+    main{
+        .contain-all{
+            section{
+                .inside-section{
+                    article{
+                        form{
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            flex-flow: column nowrap;
+                            justify-content: space-between;
+                            .labelsInputs{
+                                display: flex;
+                                flex-flow: column nowrap;
+                                gap: 15px;
+                                width: 100%;
+                                >:nth-child(1){
+                                    display: flex;
+                                    flex-flow: row nowrap;
+                                    justify-content: space-between;
+                                    width: 100%;
+                                    flex:  1 1 auto;
+                                    .labelIputWidth{
+                                        height: 27.5vh;
+                                        width: 30%;
+                                        border: 1.5px solid #9C9DA2;
+                                        display: flex;
+                                        place-content: center;
+                                        align-items: center;
+                                        border-radius: 10px;
+                                        cursor: pointer;
+                                        label{
+                                            cursor: pointer;
+                                            width: 85%;
+                                            height: 80%;
+                                            border-radius: 10px;
+                                            padding: 2.75vh 2vh;
+                                            display: flex;
+                                            flex-flow: column nowrap;
+                                            place-content: center;
+                                            justify-content: space-between;
+                                            &:hover{
+                                                border: 1px solid #9C9DA2;
+                                            }
+                                            >:nth-child(1){
+                                                    width: 100%;
+                                                    display: flex;
+                                                    >div{
+                                                        width: 100%;
+                                                        max-width: 6vh;
+                                                        img{
+                                                            width: 100%;
+                                                        }
+                                                    }
+                                            }
+                                            >:nth-child(2){
+                                                display: flex;
+                                                flex-flow: column wrap;
+                                                gap: .3vh;
+                                                h3, span{
+                                                    all: unset;
+                                                    cursor: default;
+                                                }
+                                                h3{
+                                                    color: #03285B;
+                                                    font-weight: 700;
+                                                    font-size: 2.5vh; // CAMBIAR A 2 //
+                                                }
+                                                span{
+                                                    color: #9C9DA2;
+                                                    font-weight: 400;
+                                                    font-size: 2.2vh;
+                                                    cursor: default;
+                                                }
+                                                .hideFreeMonths{
+                                                    display: none;
+                                                }
+                                                .showFreeMonths{
+                                                    display: block;
+                                                    color: #03285B;
+                                                    font-size: 2.1vh;
+                                                }
+                                            }
+                                        }
+                                        input{
+                                            display: none;
+                                        }     
+                                        input:checked + label{
+                                            border: 1px solid #9C9DA2;
+                                            background: rgba(#483EFF, .075);
+                                        }          
+                                    }  
+                                }
+                                >:nth-child(2){
+                                    width: 100%;
+                                    background: rgba(#483EFF, .075);
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    place-content: center;
+                                    border-radius: 10px;
+                                    padding: 10px 0px;
+                                    .adjust-width{
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        gap: 2vh;
+                                        width: 90%;
+                                        height: 80%;
+                                        h3{
+                                            all: unset;
+                                            font-weight: 700;
+                                            font-size: 2.1vh;
+                                            color: #9C9DA2;
+                                            cursor: default;
+                                        }
+                                        .switchTimeNeutral{
+                                            all: unset;
+                                            font-weight: 700;
+                                            font-size: 2.1vh;
+                                            color: #9C9DA2;
+                                        }
+                                        .switchTimeSelection{
+                                            all: unset;
+                                            font-weight: 700;
+                                            font-size: 2.1vh;
+                                            color: #03285B;
+                                            cursor: default;
+                                        }
+                                        .switch{
+                                            position: relative;
+                                            display: inline-block;
+                                            width: 36px;
+                                            height: 20px;
+                                            .slider:before{
+                                                position: absolute;
+                                                content: "";
+                                                height: 12px;
+                                                width: 12px;
+                                                left: 4px;
+                                                bottom: 4px;
+                                                background-color: white;
+                                                -webkit-transition: .4s;
+                                                transition: .4s;
+                                                border-radius: 50%;
+                                            }
+                                            input{
+                                                opacity: 0;
+                                                width: 0;
+                                                height: 0;
+                                            }
+                                            input:checked + .slider:before {
+                                                -webkit-transform: translateX(16px);
+                                                -ms-transform: translateX(16px);
+                                                transform: translateX(16px);
+                                            }
+                                            .slider{
+                                                position: absolute;
+                                                cursor: pointer;
+                                                top: 0;
+                                                left: 0;
+                                                right: 0;
+                                                bottom: 0;
+                                                background: #03285B;
+                                                -webkit-transition: .4s;
+                                                transition: .4s;
+                                                border-radius: 34px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .show-error-select-one{
+                                    margin: 0 auto;
+                                    width: 98%;
+                                    color: red;
+                                    font-size: 1.9vh;
+                                    cursor: default;
+                                }
+                            }
+                            >:nth-child(2){
+                                display: flex;
+                                flex-flow: row wrap;
+                                justify-content: space-between;
+                                input[type="button"]{
+                                    all: unset;
+                                    color: #9C9DA2;
+                                    cursor: pointer;
+                                    padding: 11.5px 26.5px;
+                                    border-radius: 7.5px;
+                                    font-size: 2.15vh;
+                                    font-weight: 500;
+                                    transition: .2s;
+                                    &:hover{
+                                        color: #03285B;
+                                        transition: .2s;
+                                    }
+                                }
+                                input[type="submit"]{
+                                    all: unset;
+                                    background: #03285B;
+                                    color: white;
+                                    cursor: pointer;
+                                    padding: 11.5px 26.5px;
+                                    border-radius: 7.5px;
+                                    font-size: 2.15vh;
+                                    transition: .2s;
+                                    &:hover{
+                                        transition: .2s;
+                                        background: #174A8B;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// GENERAL SECTION PARTS *FOOTER* //
+
+body{
+    main{
+        .contain-all{
+            section{
+                .inside-section{
+                    footer{
+                        form{
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            flex-flow: column nowrap;
+                            justify-content: space-between;
+                            .labelsInputs{
+                                display: flex;
+                                flex-flow: column nowrap;
+                                width: 100%;
+                                flex:  1 1 auto;
+                                gap: 2.5vh;
+                            }
+                            >:nth-child(1){
+                                display: flex;
+                                flex-flow: column nowrap;
+                                gap: 2.5vh;
+                                width: 100%;
+                                flex:  1 1 auto;
+                                .labelIputWidth{
+                                    height: 11.5vh;
+                                    width: 100%;
+                                    border: 1.5px solid #9C9DA2;
+                                    display: flex;
+                                    place-content: center;
+                                    align-items: center;
+                                    border-radius: 1.5vh;
+                                    cursor: pointer;
+                                    position: relative;
+                                    input{
+                                        width: 10%;
+                                        position: absolute;
+                                        left: 3.25vh;
+                                        height: 2.5vh;
+                                        width: 2.5vh;
+                                    }
+                                    label{
+                                        cursor: pointer;
+                                        width: 100%;
+                                        height: 100%;
+                                        position: absolute;
+                                        border-radius: 1.5vh;
+                                        display: flex;
+                                        flex-flow: row nowrap;
+                                        place-content: center;
+                                        justify-content: space-between;
+                                        place-content: center;
+                                        align-items: center;
+                                        justify-content: flex-end;
+                                        &:hover{
+                                            border: 1px solid #9C9DA2;
+                                        }
+                                        .internalLabel{
+                                            width: 88.5%;
+                                            height: 80%;
+                                            .intIntLabel{
+                                                height: 100%;
+                                                width: 95%;
+                                                display: flex;
+                                                flex-flow: row wrap;
+                                                align-items: center;
+                                                justify-content: space-between;
+                                                >:nth-child(1){
+                                                    display: flex;
+                                                    flex-flow: column wrap;
+                                                    gap: 1vh;
+                                                    h2, p{
+                                                        all: unset;
+                                                    }
+                                                    h2{
+                                                        font-size: 2.5vh;
+                                                        font-weight: 700;
+                                                        color: #03285B;
+                                                    }
+                                                    p{
+                                                        font-size: 2.1vh;
+                                                        color: #9C9DA2;
+                                                    }
+
+                                                }
+                                                >:nth-child(2){
+                                                    span{
+                                                        all: unset;
+                                                        font-size: 2.2vh;
+                                                        color: #03285B;
+                                                    }
+
+                                                }
+                                            }
+                                               
+                                        }
+                                    }
+                                    input:checked + label{
+                                        border: 1px solid #9C9DA2;
+                                        background: rgba(#483EFF, .075);
+                                    }          
+                                }  
+                            }
+                            >:nth-child(2){
+                                display: flex;
+                                flex-flow: row wrap;
+                                justify-content: space-between;
+                                input[type="button"]{
+                                    all: unset;
+                                    color: #9C9DA2;
+                                    cursor: pointer;
+                                    padding: 11.5px 26.5px;
+                                    border-radius: 7.5px;
+                                    font-size: 2.15vh;
+                                    font-weight: 500;
+                                    transition: .2s;
+                                    &:hover{
+                                        color: #03285B;
+                                        transition: .2s;
+                                    }
+                                }
+                                input[type="submit"]{
+                                    all: unset;
+                                    background: #03285B;
+                                    color: white;
+                                    cursor: pointer;
+                                    padding: 11.5px 26.5px;
+                                    border-radius: 7.5px;
+                                    font-size: 2.15vh;
+                                    transition: .2s;
+                                    &:hover{
+                                        transition: .2s;
+                                        background: #174A8B;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }  
+}
+
+// GENERAL SECTION PART *hide-div* //
+
+body{
+    main{
+        .contain-all{
+            section{
+                .inside-section{
+                    .show-div{
+                        display: flex;
+                        flex-flow: column wrap;
+                        justify-content: space-around;
+                        height: 100%;
+                        form{
+                            display: flex;
+                            flex-flow: column wrap;
+                            justify-content: space-between;
+                            height: 100%;
+                            >:nth-child(1){
+                                width: 100%;
+                                display: flex;
+                                flex-flow: column nowrap;
+                                justify-content: center;
+                                gap: 5vh;
+                                padding-bottom: 2vh;
+                                >:nth-child(1){
+                                    display: flex;
+                                    place-content: center;
+                                    align-items: center;
+                                    border-radius: 1.5vh;
+                                    padding: 2vh 0vh;
+                                    background: #F8F9FE;
+                                    >:nth-child(1){
+                                        height: 90%;
+                                        width: 90%;
+                                        display: flex;
+                                        flex-flow: column nowrap;
+                                        justify-content: space-between;
+                                        gap: 2vh;
+                                        height: auto;
+                                        >:nth-child(1){
+                                            display: flex;
+                                            flex-flow: row wrap;
+                                            align-items: center;
+                                            justify-content: space-between;
+                                            >:nth-child(1){
+                                                display: flex;
+                                                flex-flow: column wrap;
+                                                gap: 1vh;
+                                                h2, a{
+                                                    all: unset;
+                                                }
+                                                h2{
+                                                    color: #03285B;
+                                                    font-size: 2.5vh;
+                                                    font-weight: 700;
+                                                }
+                                                a{
+                                                    text-decoration: underline;
+                                                    cursor: pointer;
+                                                    color: #9C9DA2;
+                                                    font-size: 2.2vh;
+                                                    &:hover{
+                                                        color: #453CD8;
+                                                    }
+                                                }
+                                            }
+                                            >:nth-child(2){
+                                                h2{
+                                                    all: unset;
+                                                    color: #03285B;
+                                                    font-size: 2.5vh;
+                                                    font-weight: 700;
+                                                }
+                                            }
+                                        }
+                                        >:nth-child(2){
+                                            display: block;
+                                        }
+                                        >:nth-child(3){
+                                            display: flex;
+                                            flex-flow: column wrap;
+                                            gap: 3.5vh;
+                                            .last-show{
+                                                display: flex;
+                                                flex-flow: row wrap;
+                                                align-items: center;
+                                                justify-content: space-between;
+                                                h2{
+                                                    all: unset;
+                                                }
+                                                >:nth-child(1){
+                                                    h2{
+                                                        color: #9C9DA2;
+                                                        font-size: 2.2vh;
+                                                    }
+                                                }
+                                                >:nth-child(2){
+                                                    h2{
+                                                        color: #03285B;
+                                                        font-size: 2.2vh;
+                                                        font-weight: 700;
+                                                    }
+                                                }
+                                            }
+                                            .last-hide{
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                                >:nth-child(2){
+                                    display: flex;
+                                    place-content: center;
+                                    align-items: center;
+                                    >:nth-child(1){
+                                        height: 90%;
+                                        width: 90%;
+                                        display: flex;
+                                        flex-flow: row nowrap;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        background: transparent;
+                                        h2{
+                                            all: unset;
+                                        }
+                                        .totalTxt{
+                                            color: #9C9DA2;
+                                            font-size: 2.2vh;
+                                        }
+                                        .totalNbr{
+                                            color: #453CD8;
+                                            font-size: 3vh;
+                                            font-weight: 700;
+                                        }
+                                    }
+                                }
+                            }
+                            >:nth-child(2){
+                                display: flex;
+                                flex-flow: row wrap;
+                                justify-content: space-between;
+                                input[type="button"]{
+                                    all: unset;
+                                    color: #9C9DA2;
+                                    cursor: pointer;
+                                    padding: 11.5px 26.5px;
+                                    border-radius: 7.5px;
+                                    font-size: 2.15vh;
+                                    font-weight: 500;
+                                    transition: .2s;
+                                    &:hover{
+                                        color: #03285B;
+                                        transition: .2s;
+                                    }
+                                }
+                                input[type="submit"]{
+                                    all: unset;
+                                    background: #03285B;
+                                    color: white;
+                                    cursor: pointer;
+                                    padding: 11.5px 26.5px;
+                                    border-radius: 7.5px;
+                                    font-size: 2.15vh;
+                                    transition: .2s;
+                                    &:hover{
+                                        transition: .2s;
+                                        background: #174A8B;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// GENERAL SECTION *hide-thanks* //
+
+body{
+    main{
+        .contain-all{
+            section{
+                .inside-section{
+                    .show-thanks{
+                        height: 100%;
+                        display: flex;
+                        place-content: center;
+                        align-items: center;
+                        flex-flow: column wrap;
+                        gap: 3.25vh;
+                        >:nth-child(1){
+                            width: 100%;
+                            max-width: 11vh;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        >:nth-child(2){
+                            display: flex;
+                            flex-flow: column wrap;
+                            gap: 2.5vh;
+                            text-align: center;
+                            h1, p{
+                                all: unset;
+                                cursor: default;
+                            }
+                            h1{
+                                font-size: 5vh;
+                                color: #03285B;
+                                font-weight: 700;
+                            }
+                            p{
+                                font-size: 2.5vh;
+                                color: #9C9DA2;
+                                line-height: 4vh;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// MEDIA @ //
+
+// FIX TITLES //
+
+@media (max-width: 1100px){
+    body{
+        main{
+            .contain-all{
+                section{
+                    .inside-section{
+                        article{
+                            form{
+                                .labelsInputs{
+                                    >:nth-child(1){
+                                        .labelIputWidth{
+                                            label{
+                                                >:nth-child(2){
+                                                    h3{
+                                                        color: #03285B;
+                                                        font-weight: 700;
+                                                        font-size: 2vh; 
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// FIX TEXT //
+
+@media (max-width: 855px){
+    body{
+        main{
+            .contain-all{
+                aside{
+                    .img-aside{
+                        .inside-img{
+                            >div{
+                                .left-number{
+                                    span{
+                                        all: unset;
+                                        font-weight: 500;
+                                        font-size: 1.2vh;
+                                        color: white;
+                                    }
+                                }
+                                .left-number-selected{
+                                    display: flex;
+                                    place-content: center;
+                                    align-items: center;
+                                    background: #BDE1FF;
+                                    border: 1px solid #BDE1FF;
+                                    border-radius: 50%;
+                                    width: 1.5vh;
+                                    height: 1.5vh;
+                                    padding: 1.5vh;
+                                    span{
+                                        all: unset;
+                                        font-weight: 500;
+                                        font-size: 1.2vh;
+                                        color: black;
+                                    }
+                                }
+                                .right-number{
+                                    h3{
+                                        font-size: 1.2vh;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// BODY + MAIN + ASIDE + SECTION + HEADER //
+
+@media (max-width: 850px){
+    body{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        place-content: center;
+        align-items: center;
+        main{
+            margin: 0 auto;
+            width: 100%;
+            height: 100vh;
+            background: white;
+            border-radius: 0px;   
+            padding: 0px;
+            background: #E7EEF8;
+            .contain-all{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                aside{
+                    height: 25%;
+                    width: 100%;
+                    .img-aside{
+                        background: url('../IMG/bg-sidebar-mobile.svg') no-repeat;
+                        background-size: cover;
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 0;
+                        display: flex;
+                        flex-flow: column wrap;
+                        justify-content: flex-start;
+                        .inside-img{
+                            height: 100%;
+                            width: 100%;
+                            display: flex;
+                            flex-flow: row wrap;
+                            align-items: center;
+                            justify-content: center;
+                            >div{
+                                display: flex;
+                                flex-flow: row wrap;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 10px;
+                                margin-top: -8.5vh;
+                                .left-number{
+                                    display: flex;
+                                    place-content: center;
+                                    align-items: center;
+                                    border: 1px solid white;
+                                    border-radius: 50%;
+                                    width: 1.5vh;
+                                    height: 1.5vh;
+                                    padding: 1.5vh;
+                                    span{
+                                        all: unset;
+                                        font-weight: 500;
+                                        font-size: 2vh;
+                                        color: white;
+                                    }
+                                }
+                                .left-number-selected{
+                                    display: flex;
+                                    place-content: center;
+                                    align-items: center;
+                                    background: #BDE1FF;
+                                    border: 1px solid #BDE1FF;
+                                    border-radius: 50%;
+                                    width: 1.5vh;
+                                    height: 1.5vh;
+                                    padding: 1.5vh;
+                                    span{
+                                        all: unset;
+                                        font-weight: 500;
+                                        font-size: 2vh;
+                                        color: black;
+                                    }
+                                }
+                                .right-number{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                section{
+                    margin-top: -8.5vh;
+                    height: 85%;
+                    width: 90%;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 20px 20px 0px 0px;
+                    background: white;
+                    box-shadow: 0px 10px 10px 1px rgba(black, .5);
+                    .inside-section{
+                        width: 92.5%;
+                        height: 92.5%;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: space-between;
+                        gap: 30px;
+                        border-radius: 20px;
+                        header{
+                            display: flex;
+                            flex-flow: column nowrap;
+                            gap: 10px;
+                            width: 100%;
+                            margin: 0 auto;
+                            .headerH2{
+                                font-size: 3.25vh;
+                            }
+                            .headerP{
+                                font-size: 2.45vh;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ARTICLE //
+
+@media (max-width: 850px){
+    body{
+        main{
+            .contain-all{
+                section{
+                    .inside-section{
+                        article{
+                            form{
+                                .labelsInputs{
+                                    display: flex;
+                                    flex-flow: column nowrap;
+                                    justify-content: space-between;
+                                    >:nth-child(1){
+                                        display: flex;
+                                        flex-flow: column nowrap;
+                                        justify-content: space-between;
+                                        gap: 20px;
+                                        .labelIputWidth{
+                                            height: 10.5vh;
+                                            width: 100%;
+                                            border: 1.5px solid #9C9DA2;
+                                            display: flex;
+                                            flex-flow: row wrap;
+                                            place-content: center;
+                                            border-radius: 10px;
+                                            cursor: pointer;
+                                            label{
+                                                width: 100%;
+                                                height: 50%;
+                                                border-radius: 10px;
+                                                padding: 2.5vh 3vh;
+                                                display: flex;
+                                                flex-flow: row nowrap;
+                                                align-items: center;
+                                                justify-content: flex-start;
+                                                gap: 2vh;
+                                                >:nth-child(1){
+                                                    width: auto;
+                                                        >div{
+                                                            width: 100%;
+                                                            max-width: 4.5vh;
+                                                            img{
+                                                                width: 100%;
+                                                            }
+                                                        }
+                                                }
+                                                >:nth-child(2){
+                                                    display: flex;
+                                                    flex-flow: column nowrap;
+                                                    gap: .3vh;
+                                                    height: 100%;
+                                                    h3{
+                                                        font-size: 1.9vh; 
+                                                    }
+                                                    span{
+                                                        font-size: 1.8vh;
+                                                    }
+                                                   
+                                                    .showFreeMonths{
+                                                        font-size: 1.75vh;
+                                                    }
+                                                }
+                                            }
+                                        }                                       
+                                    }
+                                }
+                                >:nth-child(2){
+                                    input{
+                                        font-size: 2vh;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// FOOTER //
+
+@media (max-width: 850px){
+    body{
+        main{
+            .contain-all{
+                section{
+                    .inside-section{
+                        footer{
+                            form{
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                flex-flow: column nowrap;
+                                justify-content: space-between;
+                                .labelsInputs{
+                                    display: flex;
+                                    flex-flow: column nowrap;
+                                    width: 100%;
+                                    flex:  1 1 auto;
+                                    gap: 20px;
+                                }
+                                >:nth-child(1){
+                                    .labelIputWidth{
+                                        height: 10.5vh;
+                                        width: 100%;
+                                        border: 1.5px solid #9C9DA2;
+                                        display: flex;
+                                        place-content: center;
+                                        align-items: center;
+                                        border-radius: 1.5vh;
+                                        cursor: pointer;
+                                        position: relative;
+                                        input{
+                                            width: 10%;
+                                            position: absolute;
+                                            left: 1.25vh;
+                                            height: 2vh;
+                                            width: 2vh;
+                                        }
+                                        label{
+                                            cursor: pointer;
+                                            width: 100%;
+                                            height: 100%;
+                                            position: absolute;
+                                            border-radius: 1.5vh;
+                                            display: flex;
+                                            flex-flow: row nowrap;
+                                            place-content: center;
+                                            justify-content: space-between;
+                                            place-content: center;
+                                            align-items: center;
+                                            justify-content: flex-end;
+                                            &:hover{
+                                                border: 1px solid #9C9DA2;
+                                            }
+                                            .internalLabel{
+                                                width: 88.5%;
+                                                height: 80%;
+                                                .intIntLabel{
+                                                    height: 100%;
+                                                    width: 95%;
+                                                    display: flex;
+                                                    flex-flow: row wrap;
+                                                    align-items: center;
+                                                    justify-content: space-between;
+                                                    >:nth-child(1){
+                                                        display: flex;
+                                                        flex-flow: column wrap;
+                                                        gap: .5vh;
+                                                        h2, p{
+                                                            all: unset;
+                                                        }
+                                                        h2{
+                                                            font-size: 1.9vh;
+                                                            font-weight: 700;
+                                                            color: #03285B;
+                                                        }
+                                                        p{
+                                                            font-size: 1.8vh;
+                                                            color: #9C9DA2;
+                                                        }
+    
+                                                    }
+                                                    >:nth-child(2){
+                                                        span{
+                                                            color: #03285B;
+                                                            font-size: 1.75vh;
+                                                        }
+    
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }  
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }  
+    }  
+}
+
+// HIDE DIV //
+
+@media (max-width: 850px){
+    body{
+        main{
+            .contain-all{
+                section{
+                    .inside-section{
+                        .show-div{
+                            form{
+                                >:nth-child(1){
+                                    >:nth-child(1){
+                                        >:nth-child(1){
+                                            >:nth-child(1){
+                                                >:nth-child(1){
+                                                    h2, a{
+                                                        all: unset;
+                                                    }
+                                                    h2{
+                                                        font-size: 2.1vh;
+                                                    }
+                                                    a{
+                                                        font-size: 2vh;
+                                                    }
+                                                }
+                                                >:nth-child(2){
+                                                    h2{
+                                                        all: unset;
+                                                        font-size: 2.1vh;
+                                                    }
+                                                }
+                                            }
+                                            >:nth-child(3){
+                                                .last-show{
+                                                    h2{
+                                                        all: unset;
+                                                    }
+                                                    >:nth-child(1){
+                                                        h2{
+                                                            font-size: 2.1vh;
+                                                        }
+                                                    }
+                                                    >:nth-child(2){
+                                                        h2{
+                                                            font-size: 2.1vh;
+                                                        }
+                                                    }
+                                                }
+                                                .last-hide{
+                                                    display: none;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    >:nth-child(2){
+                                        >:nth-child(1){
+                                            h2{
+                                                all: unset;
+                                            }
+                                            .totalTxt{
+                                                font-size: 2.1vh;
+                                            }
+                                            .totalNbr{
+                                                font-size: 2.5vh;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// THANKS //
+
+@media(max-width: 850px){
+    body{
+        main{
+            .contain-all{
+                section{
+                    .inside-section{
+                        .show-thanks{
+                            gap: 3vh;
+                            >:nth-child(1){
+                                max-width: 9vh;
+                            }
+                            >:nth-child(2){
+                                gap: 2.25vh;
+                                h1, p{
+                                    all: unset;
+                                }
+                                h1{
+                                    font-size: 4vh;
+                                    color: #03285B;
+                                    font-weight: 700;
+                                }
+                                p{
+                                    font-size: 2.1vh;
+                                    color: #9C9DA2;
+                                    line-height: 3vh;
+                                    br{
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// HIDE THE SECTION PARTS //
+
+body{
+    main{
+        .contain-all{
+            section{
+                .inside-section{
+                    nav, article, footer, .hide-div{
+                        height: 83.5%;
+                    }
+                    article, footer, .hide-div, .hide-thanks{
+                        display: none;
+                    }
+                    .show-part{
+                        display: flex;
+                    }
+                    .hide-part{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
